@@ -2,6 +2,8 @@
 
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
+import Image from 'next/image';
+import emanuel from '../public/emanuel.jpeg';
 
 export default function Hero() {
   const scrollToSection = (href: string) => {
@@ -15,10 +17,11 @@ export default function Hero() {
     <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Video/Image */}
       <div className="absolute inset-0">
-        <img
-          src="/emanuel.jpeg"
+        <Image
+          src={emanuel}
           alt="Emanuel Iglesia"
-          className="w-full h-full object-cover"
+          fill
+          className="object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background" />
       </div>

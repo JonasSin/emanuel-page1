@@ -2,27 +2,30 @@
 
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Calendar } from 'lucide-react';
+import Image from 'next/image';
+import foto from '../public/foto.jpeg';
+import foto2 from '../public/foto2.jpeg';
 
 const events = [
   {
     title: 'Retiro de Remanentes',
     date: 'Abril 13 - 20, 2026',
     description: 'Únete a nosotros junto con el Cuerpo de Cristo global para honrar a Jesús durante la Semana Santa. Tendremos tiempos de oración, adoración y reflexión sobre la obra de Cristo en la Cruz.',
-    image: '/foto.jpeg',
+    image: foto,
     featured: true,
   },
   {
     title: 'Conferencia de Jóvenes',
     date: 'Mayo 15 - 17, 2026',
     description: 'Un encuentro poderoso para la nueva generación. Tres días de adoración, enseñanza y comunidad.',
-    image: '/foto2.jpeg',
+    image: foto2,
     featured: false,
   },
   {
     title: 'Retiro de Matrimonios',
     date: 'Junio 5 - 7, 2026',
     description: 'Un fin de semana especial para fortalecer tu matrimonio y renovar tu compromiso.',
-    image: '/foto.jpeg',
+    image: foto,
     featured: false,
   },
 ];
@@ -35,10 +38,11 @@ export default function Events() {
         <div className="mb-20">
           <div className="grid lg:grid-cols-2 gap-0 bg-background rounded-lg overflow-hidden border border-border">
             <div className="relative aspect-[4/3] lg:aspect-auto">
-              <img
+              <Image
                 src={events[0].image}
                 alt={events[0].title}
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover"
               />
             </div>
             <div className="p-8 md:p-12 flex flex-col justify-center">
@@ -81,10 +85,11 @@ export default function Events() {
               className="group bg-background rounded-lg overflow-hidden border border-border hover:border-foreground/30 transition-all duration-300"
             >
               <div className="aspect-video overflow-hidden">
-                <img
+                <Image
                   src={event.image}
                   alt={event.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
               <div className="p-6">

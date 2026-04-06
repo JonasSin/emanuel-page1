@@ -2,6 +2,8 @@
 
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
+import Image from 'next/image';
+import foto from '../public/foto.jpeg';
 
 export default function About() {
   return (
@@ -50,10 +52,11 @@ export default function About() {
           {/* Right Column - Image */}
           <div className="relative">
             <div className="aspect-[4/5] overflow-hidden rounded-lg">
-              <img
-                src="/foto.jpeg"
+              <Image
+                src={foto}
                 alt="Comunidad de fe"
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover"
               />
             </div>
             <div className="absolute -bottom-8 -left-8 w-48 h-48 bg-secondary rounded-lg hidden lg:block" />

@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import iglesiaLogo from '../public/iglesia-logo.png';
 
 const navLinks = [
   { name: 'Inicio', href: '#inicio' },
@@ -49,7 +50,7 @@ export default function Navbar() {
             className="flex items-center gap-3 text-xl font-bold tracking-tight text-foreground hover:opacity-80 transition-opacity"
           >
             <Image
-              src="/iglesia-logo.png"
+              src={iglesiaLogo}
               alt="Logo Iglesia Emanuel"
               width={40}
               height={40}
