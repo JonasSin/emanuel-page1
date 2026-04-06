@@ -51,7 +51,7 @@ export default function About() {
 
           {/* Right Column - Image */}
           <div className="relative">
-            <div className="aspect-[4/5] overflow-hidden rounded-lg">
+            <div className="relative aspect-[4/5] overflow-hidden rounded-lg">
               <Image
                 src={foto}
                 alt="Comunidad de fe"

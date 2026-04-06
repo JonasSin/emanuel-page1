@@ -84,7 +84,7 @@ export default function Events() {
               key={index}
               className="group bg-background rounded-lg overflow-hidden border border-border hover:border-foreground/30 transition-all duration-300"
             >
-              <div className="aspect-video overflow-hidden">
+              <div className="relative aspect-video overflow-hidden">
                 <Image
                   src={event.image}
                   alt={event.title}

@@ -3,7 +3,7 @@
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import Image from 'next/image';
-import emanuel from '../public/emanuel.jpeg';
+import emanuel from '../public/emanuel1.jpeg';
 
 export default function Hero() {
   const scrollToSection = (href: string) => {
