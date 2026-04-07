@@ -33,14 +33,14 @@ const connectOptions = [
 
 export default function Connect() {
   return (
-    <section id="contacto" className="py-32 bg-background">
+    <section id="contacto" className="py-32 bg-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
           <p className="text-sm font-medium tracking-[0.3em] uppercase text-muted-foreground mb-4">
             Conecta
           </p>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-muted-foreground mb-6">
             Cumplir la Gran Comisión de nuestro Señor Jesucristo
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">

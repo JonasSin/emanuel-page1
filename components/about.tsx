@@ -7,11 +7,11 @@ import foto from '../public/foto.jpeg';
 
 export default function About() {
   return (
-    <section id="nosotros" className="py-32 bg-background">
+    <section id="nosotros" className="py-32 bg-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Main Statement */}
         <div className="max-w-4xl mb-32">
-          <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-8">
+          <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-black leading-tight mb-8">
             Una iglesia que viva y testifique el poder del Espíritu Santo, así como ocurrió en el Aposento Alto de Marcos, 
             extendiendo el evangelio hasta lo último de la tierra.
           </h2>
@@ -21,10 +21,10 @@ export default function About() {
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-start">
           {/* Left Column - Text */}
           <div>
-            <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
+            <h3 className="text-2xl md:text-3xl font-bold text-black mb-6">
               Que el Trino Dios obre en nosotros, Gobierna nuestros corazones almas, cuerpos y mentes. 
             </h3>
-            <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+            <p className="text-lg text-teal-900 leading-relaxed mb-8">
               Cristo es el verdadero Profeta, quien nos reveló el camino hacia Dios.
               Es el verdadero Sacerdote, quien murió en la cruz para deshacer toda maldición.
               Y es el verdadero Rey, quien aplastó la cabeza de Satanás y nos dio la victoria.
