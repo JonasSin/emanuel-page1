@@ -92,10 +92,10 @@ export default function Services() {
                 </span>
               </div>
               <h3 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-                Betania, Ciudad de Panamá
+                Panamá, Provincia de Panamá - Bethania, Club X.
               </h3>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                Tiempos de adoración, enseñanza y oración donde como iglesia nos reunimos para escuchar la Palabra de Dios, fortalecer nuestra fe y crecer en comunión.
+               Sostenemos y disfrutamos el pacto de Dios las 24 horas del día, caminando bajo su soberanía absoluta y confiando plenamente en Su gobierno perfecto.
               </p>
               <Button className="bg-foreground text-background hover:bg-foreground/90">
                 Obtener Direcciones
@@ -103,7 +103,8 @@ export default function Services() {
             </div>
             <div className="aspect-video bg-background rounded-lg overflow-hidden">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15767.851756726285!2d-79.53!3d9.01!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOcKwMDAnMzYuMCJOIDc5wrAzMScxMi4wIlc!5e0!3m2!1sen!2spa!4v1234567890"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d633.7452158117254!2d-79.52135098317981!3d9.013889003443543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8faca915ac1e2b2b%3A0xfe34064ac755026f!2sRUTC%20Latinamerica!5e0!3m2!1ses!2spa!4v1776914110945!5m2!1ses!2spa"
+                
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

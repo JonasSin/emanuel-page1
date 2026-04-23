@@ -20,7 +20,7 @@ export default function About() {
         {/* Two Column Section */}
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-start">
           {/* Left Column - Text */}
-          <div>
+          <div className="order-2 lg:order-1">
             <h3 className="text-2xl md:text-3xl font-bold text-black mb-6">
               Que el Trino Dios obre en nosotros, Gobierna nuestros corazones almas, cuerpos y mentes. 
             </h3>
@@ -50,7 +50,7 @@ export default function About() {
           </div>
 
           {/* Right Column - Image */}
-          <div className="relative">
+          <div className="relative order-1 lg:order-2">
             <div className="relative aspect-[4/5] overflow-hidden rounded-lg">
               <Image
                 src={foto}
