@@ -12,9 +12,11 @@ export default function About() {
         {/* Main Statement */}
         <div className="max-w-4xl mb-32">
           <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-black leading-tight mb-8">
-            Una iglesia que viva y testifique el poder del Espíritu Santo, así como ocurrió en el Aposento Alto de Marcos, 
-            extendiendo el evangelio hasta lo último de la tierra.
+            Pero recibiréis poder, cuando haya venido sobre vosotros el Espíritu Santo, y me seréis testigos en Jerusalén, en toda Judea, en Samaria, y hasta lo último de la tierra.
           </h2>
+          <h3 className="text-xl md:text-3xl font-semibold text-gray-900">
+            Hechos 1 : 8
+          </h3>
         </div>
 
         {/* Two Column Section */}
@@ -22,14 +24,13 @@ export default function About() {
           {/* Left Column - Text */}
           <div className="order-2 lg:order-1">
             <h3 className="text-2xl md:text-3xl font-bold text-black mb-6">
-              Que el Trino Dios obre en nosotros, Gobierna nuestros corazones almas, cuerpos y mentes. 
+              Somos una iglesia que viva y testifique el poder del Espíritu Santo,
             </h3>
             <p className="text-lg text-teal-900 leading-relaxed mb-8">
-              Cristo es el verdadero Profeta, quien nos reveló el camino hacia Dios.
+              así como ocurrió en el Aposento Alto de Marcos, extendiendo el evangelio hasta lo último de la tierra.  
+              <p>Cristo es el verdadero Profeta, quien nos reveló el camino hacia Dios.
               Es el verdadero Sacerdote, quien murió en la cruz para deshacer toda maldición.
-              Y es el verdadero Rey, quien aplastó la cabeza de Satanás y nos dio la victoria.
-              Cuando aceptas a este Cristo como tu único y suficiente Salvador personal, recibes una nueva vida en Él, restaurando tu relación con Dios y entrando en el propósito eterno para el cual fuiste creado.
-
+              Y es el verdadero Rey, quien aplastó la cabeza de Satanás y nos dio la victoria.</p>
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
