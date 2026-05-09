@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Calendar } from 'lucide-react';
 import Image from 'next/image';
@@ -9,6 +10,7 @@ import foto2 from '../public/foto2.jpeg';
 const events = [
   {
     title: 'Retiro de Remanentes',
+    slug: 'retiro',
     date: 'Abril 13 - 20, 2026',
     description: 'Únete a nosotros junto con el Cuerpo de Cristo global para honrar a Jesús durante la Semana Santa. Tendremos tiempos de oración, adoración y reflexión sobre la obra de Cristo en la Cruz.',
     image: foto,
@@ -16,15 +18,17 @@ const events = [
   },
   {
     title: 'Conferencia de Jóvenes',
+    slug: 'conferencia',
     date: 'Mayo 15 - 17, 2026',
     description: 'Un encuentro poderoso para la nueva generación. Tres días de adoración, enseñanza y comunidad.',
     image: foto2,
     featured: false,
   },
   {
-    title: 'Retiro de Matrimonios',
+    title: 'Entrenamiento RUTC',
+    slug: 'matrimonios',
     date: 'Junio 5 - 7, 2026',
-    description: 'Un fin de semana especial para fortalecer tu matrimonio y renovar tu compromiso.',
+    description: 'Un fin de semana especial para fortalecer....',
     image: foto,
     featured: false,
   },
@@ -62,9 +66,11 @@ export default function Events() {
                 {events[0].description}
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button className="bg-foreground text-background hover:bg-foreground/90">
-                  Ver Evento
-                  <ArrowRight className="ml-2 h-4 w-4" />
+                <Button asChild className="bg-foreground text-background hover:bg-foreground/90">
+                  <Link href={`/event/${events[0].slug}`}>
+                    Ver Evento
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Link>
                 </Button>
                 <Button
                   variant="outline"
@@ -103,12 +109,11 @@ export default function Events() {
                 <p className="text-muted-foreground text-sm leading-relaxed mb-4">
                   {event.description}
                 </p>
-                <Button
-                  variant="ghost"
-                  className="text-foreground hover:bg-foreground/10 p-0 h-auto font-medium"
-                >
-                  Ver Detalles
-                  <ArrowRight className="ml-2 h-4 w-4" />
+                <Button asChild variant="ghost" className="text-foreground hover:bg-foreground/10 p-0 h-auto font-medium">
+                  <Link href={`/event/${event.slug}`}>
+                    Ver Detalles
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Link>
                 </Button>
               </div>
             </div>

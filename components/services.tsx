@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 const serviceSchedule = [
   {
     day: 'Domingo',
-    times: ['11:00 AM', '12:00 PM', '2:00 PM'],
+    times: ['11:00 AM'],
     description: 'Culto Dominical',
   },
   {

@@ -28,10 +28,15 @@ export default function Navbar() {
   }, []);
 
   const scrollToSection = (href: string) => {
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+    if (window.location.pathname === '/') {
+      const element = document.querySelector(href);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      window.location.href = `/${href}`;
     }
+
     setIsOpen(false);
   };
 
@@ -73,7 +78,7 @@ export default function Navbar() {
 
           <div className="hidden lg:block">
             <Button
-              onClick={() => scrollToSection('#servici')}
+              onClick={() => scrollToSection('#servicios')}
               variant="outline"
               className="border-foreground text-foreground hover:bg-foreground hover:text-background transition-all"
             >

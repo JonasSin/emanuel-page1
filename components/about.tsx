@@ -26,12 +26,13 @@ export default function About() {
             <h3 className="text-2xl md:text-3xl font-bold text-black mb-6">
               Somos una iglesia que viva y testifique el poder del Espíritu Santo,
             </h3>
+            <p className="text-lg text-teal-900 leading-relaxed ">
+              así como ocurrió en el Aposento Alto de Marcos, extendiendo el evangelio hasta lo último de la tierra.   
+            </p>
             <p className="text-lg text-teal-900 leading-relaxed mb-8">
-              así como ocurrió en el Aposento Alto de Marcos, extendiendo el evangelio hasta lo último de la tierra.  
-              <p>Cristo es el verdadero Profeta, quien nos reveló el camino hacia Dios.
+              Cristo es el verdadero Profeta, quien nos reveló el camino hacia Dios.
               Es el verdadero Sacerdote, quien murió en la cruz para deshacer toda maldición.
               Y es el verdadero Rey, quien aplastó la cabeza de Satanás y nos dio la victoria.</p>
-            </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
                 variant="outline"
