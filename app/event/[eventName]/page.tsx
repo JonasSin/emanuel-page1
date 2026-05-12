@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Navbar from '@/components/navbar';
 import EventDetail from '@/components/event-detail';
+import Footer from '@/components/footer';
 import { eventData, type EventName } from '@/lib/event-data';
 
 interface EventPageProps {
@@ -48,6 +49,7 @@ export default async function EventPage({ params }: EventPageProps) {
     <>
       <Navbar />
       <EventDetail eventName={eventName} />
+      <Footer />
     </>
   );
 }

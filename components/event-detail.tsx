@@ -34,7 +34,7 @@ export default function EventDetail({ eventName }: EventDetailProps) {
               fill
               className="object-cover"
             />
-            <div className="absolute inset-0 bg-black/30" />
+            <div className="absolute inset-0 bg-black/10" />
             <div className="absolute bottom-8 left-8 right-8 text-white">
               <p className="uppercase tracking-[0.3em] text-sm text-white/80 mb-3">Eventos</p>
               <h1 className="text-4xl md:text-5xl font-bold leading-tight">
@@ -43,10 +43,10 @@ export default function EventDetail({ eventName }: EventDetailProps) {
             </div>
           </div>
 
-          <div className="rounded-[2rem] border border-border bg-white p-8 shadow-sm">
+          <div className="rounded-[1rem] border border-border bg-white p-8 shadow-sm">
             <div className="space-y-6">
               <div>
-                <h2 className="text-3xl font-bold text-foreground mb-3">{event.title}</h2>
+               <h2 className="text-3xl font-bold text-gray-500 mb-3">{event.title}</h2>
                 <p className="text-muted-foreground leading-relaxed">
                   {event.description}
                 </p>
@@ -93,7 +93,7 @@ export default function EventDetail({ eventName }: EventDetailProps) {
 
         <div className="mt-16 grid lg:grid-cols-[0.9fr_1.1fr] gap-10">
           <div className="space-y-6">
-            <h3 className="text-2xl font-bold text-foreground">Qué esperar</h3>
+            <h3 className="text-2xl font-bold text-gray-500">Detalles / Informaci[on</h3>
             <p className="text-muted-foreground leading-relaxed">
               {event.details}
             </p>
@@ -103,7 +103,7 @@ export default function EventDetail({ eventName }: EventDetailProps) {
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold text-foreground">Galería</h3>
+            <h3 className="text-2xl font-bold text-gray-500">Galería</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {event.images.slice(1).map((image, index) => (
                 <div key={index} className="relative aspect-[4/3] overflow-hidden border border-border">

@@ -1,6 +1,7 @@
 'use client';
 
 import { Facebook, Instagram, Youtube, Mail, Phone, MapPin } from 'lucide-react';
+import Image from 'next/image';
 
 const footerLinks = {
   connect: [
@@ -27,7 +28,7 @@ const footerLinks = {
 const socialLinks = [
   { name: 'Facebook', icon: Facebook, href: '#' },
   { name: 'Instagram', icon: Instagram, href: '#' },
-  { name: 'YouTube', icon: Youtube, href: '#' },
+  { name: 'YouTube', icon: Youtube, href: 'https://www.youtube.com/@iglesiaemanueldepanama2773' },
 ];
 
 export default function Footer() {
@@ -40,11 +41,17 @@ export default function Footer() {
         <div className="py-16 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-12">
           {/* Brand */}
           <div className="col-span-2 md:col-span-4 lg:col-span-1">
-            <h3 className="text-xl font-bold text-foreground mb-4">
-              IGLESIA EMANUEL
-            </h3>
+            <div className="mb-4 bg-white px-2 py-2 rounded-xl inline-flex items-center justify-center border border-slate-200 shadow-sm">
+              <Image
+                src="/logo.png"
+                alt="Iglesia Emanuel"
+                width={240}
+                height={96}
+                className="h-[72px] w-auto"
+              />
+            </div>
             <p className="text-sm text-muted-foreground leading-relaxed mb-6">
-              Cumplir la Gran Comisión de nuestro Señor Jesucristo, proclamando el evangelio con poder, formando discípulos firmes en la Palabra y caminando en unidad para alcanzar a todas las naciones con el mensaje de salvación.
+              Cumplir la Gran Comisión de nuestro Señor Jesucristo, proclamando el evangelio con poder. 
             </p>
             <div className="flex gap-3">
               {socialLinks.map((social) => {
@@ -149,7 +156,8 @@ export default function Footer() {
           </p>
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+            className="text-sm text-muted-foreground hover:text-foreground transition-colors "
+            
           >
             Volver arriba
           </button>

@@ -7,9 +7,7 @@ export const eventData = {
     location: 'Centro de Retiros Betania',
     description: 'Únete a nosotros junto con el Cuerpo de Cristo global para honrar a Jesús durante la Semana Santa. Tendremos tiempos de oración, adoración y reflexión sobre la obra de Cristo en la Cruz.',
     images: [
-      '/retiro/retiro1.jpg',
-      '/retiro/retiro2.jpg',
-      '/retiro/retiro3.jpg',
+      '/retiro/foto2.jpeg',
     ],
     details: 'Este retiro especial incluye sesiones de adoración, talleres de oración y momentos de comunión. Ven preparado para una experiencia transformadora.',
   },
@@ -20,9 +18,7 @@ export const eventData = {
     location: 'Auditorio Principal',
     description: 'Un encuentro poderoso para la nueva generación. Tres días de adoración, enseñanza y comunidad.',
     images: [
-      '/conferencia/jovenes1.jpg',
-      '/conferencia/jovenes2.jpg',
-      '/conferencia/jovenes3.jpg',
+      '/conferencia/foto2.jpeg',
     ],
     details: 'La conferencia incluye sesiones con oradores invitados, talleres interactivos y momentos de alabanza. Ideal para jóvenes de 18-30 años.',
   },
@@ -33,9 +29,7 @@ export const eventData = {
     location: 'Centro de Convenciones',
     description: 'Un fin de semana especial para fortalecer tu matrimonio y renovar tu compromiso.',
     images: [
-      '/matrimonios/retiro1.jpg',
-      '/matrimonios/retiro2.jpg',
-      '/matrimonios/retiro3.jpg',
+      '/matrimonios/foto2.jpeg',
     ],
     details: 'Sesiones enfocadas en comunicación, amor y fe en el matrimonio. Actividades para parejas y tiempo de descanso.',
   },
