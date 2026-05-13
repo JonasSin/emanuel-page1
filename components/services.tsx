@@ -42,7 +42,7 @@ export default function Services() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-20">
-          <p className="text-sm font-medium tracking-[0.3em] uppercase text-muted-foreground mb-4">
+          <p className="text-sm font-medium tracking-[0.4em] uppercase text-black/60 mb-4">
             Horarios de Servicios
           </p>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground">

@@ -50,7 +50,7 @@ export default function Events() {
             <div className="p-8 md:p-12 flex flex-col justify-center">
               <div className="flex items-center gap-2 mb-4">
                 <span className="text-xs font-medium tracking-[0.2em] uppercase text-muted-foreground">
-                  Eventos
+                  Encuentros
                 </span>
               </div>
               <h3 className="text-3xl md:text-4xl font-bold text-foreground mb-4">

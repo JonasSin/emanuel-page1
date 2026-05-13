@@ -23,7 +23,7 @@ export default function Hero() {
           fill
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background/50" />
       </div>
 
       {/* Content */}
@@ -39,7 +39,7 @@ export default function Hero() {
           <span className="text-muted-foreground">De Panamá</span>
         </h1>
 
-        <p className="text-lg md:text-xxl text-muted-foreground max-w-2xl mx-auto mb-9 leading-relaxed">
+        <p className="text-lg md:text-xxl text-white/70 max-w-2xl mx-auto mb-9 leading-relaxed">
           Que el Trino Dios Obre en nosotros, Gobierna nuestros corazones almas, cuerpos y mentes. 
           </p>
 

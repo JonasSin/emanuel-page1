@@ -28,18 +28,28 @@ const ministries = [
 
 export default function Ministries() {
   return (
-    <section id="ministerios" className="py-32 bg-background">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+    <section 
+      id="ministerios" 
+      className="py-32 relative"
+      style={{
+        backgroundImage: 'url(/ministerio.png)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed'
+      }}
+    >
+      <div className="absolute inset-0 bg-background/80"></div>
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
         {/* Header */}
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between mb-16">
           <div>
             <p className="text-sm font-medium tracking-[0.3em] uppercase text-muted-foreground mb-4">
               Ministerios
             </p>
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground">
-              Hay un lugar para ti en lo que
+            <h2 className="text-4xl md:text-4xl font-bold text-foreground">
+              Centro donde se enseña la Palabra, 
               <br />
-              Dios está haciendo en nuestra casa.
+              se forman discípulos y se preparan obreros
             </h2>
           </div>
           <Button
@@ -52,21 +62,21 @@ export default function Ministries() {
         </div>
 
         {/* Ministry Cards */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-4 lg:grid-cols-4 gap-6">
           {ministries.map((ministry, index) => {
             const Icon = ministry.icon;
             return (
               <div
                 key={index}
-                className="group p-8 bg-secondary rounded-lg border border-border hover:border-foreground/30 transition-all duration-300 cursor-pointer"
+                className="group p-8 bg-white/80 rounded-lg border border-border hover:border-foreground/60 transition-all duration-300 cursor-pointer"
               >
                 <div className="w-12 h-12 rounded-lg bg-background flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                   <Icon className="h-6 w-6 text-foreground" />
                 </div>
-                <h3 className="text-xl font-bold text-foreground mb-3">
+                <h3 className="text-xl font-bold text-black mb-3">
                   {ministry.title}
                 </h3>
-                <p className="text-muted-foreground leading-relaxed text-sm">
+                <p className="text-black leading-relaxed text-sm">
                   {ministry.description}
                 </p>
               </div>
