@@ -27,7 +27,7 @@ export default function EventDetail({ eventName }: EventDetailProps) {
     <section className="min-h-screen bg-white text-foreground py-24">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid lg:grid-cols-[1.4fr_0.9fr] gap-10 items-start">
-          <div className="relative overflow-hidden shadow-lg border border-border min-h-[520px]">
+          <div className="relative overflow-hidden shadow-lg min-h-[520px]">
             <Image
               src={event.images[0]}
               alt={event.title}
@@ -36,7 +36,7 @@ export default function EventDetail({ eventName }: EventDetailProps) {
             />
             <div className="absolute inset-0 bg-black/10" />
             <div className="absolute bottom-8 left-8 right-8 text-white">
-              <p className="uppercase tracking-[0.3em] text-sm text-white/80 mb-3">Eventos</p>
+              <p className="uppercase tracking-[0.3em] text-sm text-white/80 mb-3">Encuentro</p>
               <h1 className="text-4xl md:text-5xl font-bold leading-tight">
                 {event.title}
               </h1>

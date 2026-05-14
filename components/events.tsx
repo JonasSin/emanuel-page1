@@ -30,6 +30,22 @@ const events = [
     image: '/matrimonios/foto2.jpeg',
     featured: false,
   },
+  {
+    title: 'Entrenamiento RUTC',
+    slug: 'matrimonios',
+    date: 'Junio 5 - 7, 2026',
+    description: 'Un fin de semana especial para fortalecer....',
+    image: '/matrimonios/foto2.jpeg',
+    featured: false,
+  },
+  {
+    title: 'Entrenamiento RUTC',
+    slug: 'matrimonios',
+    date: 'Junio 5 - 7, 2026',
+    description: 'Un fin de semana especial para fortalecer....',
+    image: '/matrimonios/foto2.jpeg',
+    featured: false,
+  },
 ];
 
 export default function Events() {
@@ -38,7 +54,8 @@ export default function Events() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Featured Event */}
         <div className="mb-20">
-          <div className="grid lg:grid-cols-2 gap-0 bg-background rounded-lg overflow-hidden border border-border">
+          
+          <div className="grid lg:grid-cols-2 gap-0 bg-white/40 rounded-lg overflow-hidden hover:border-foreground/50 transition-all duration-300 cursor-pointer border border-border">
             <div className="relative aspect-[4/3] lg:aspect-auto">
               <Image
                 src={events[0].image}
@@ -49,8 +66,8 @@ export default function Events() {
             </div>
             <div className="p-8 md:p-12 flex flex-col justify-center">
               <div className="flex items-center gap-2 mb-4">
-                <span className="text-xs font-medium tracking-[0.2em] uppercase text-muted-foreground">
-                  Encuentros
+                <span className="text-xxs font-medium tracking-[0.4em] uppercase text-black/80">
+                  Encuentros  
                 </span>
               </div>
               <h3 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -70,23 +87,26 @@ export default function Events() {
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
+                {/*}
                 <Button
                   variant="outline"
                   className="border-foreground/30 text-foreground hover:bg-foreground/10"
                 >
                   Registrarse
                 </Button>
+
+                */}
               </div>
             </div>
           </div>
         </div>
 
         {/* Other Events */}
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-2 gap-8">
           {events.slice(1).map((event, index) => (
             <div
               key={index}
-              className="group bg-background rounded-lg overflow-hidden border border-border hover:border-foreground/30 transition-all duration-300"
+              className="group bg-white/50 rounded-lg overflow-hidden border border-border hover:border-foreground/30 transition-all duration-300"
             >
               <div className="relative aspect-video overflow-hidden">
                 <Image
@@ -97,14 +117,14 @@ export default function Events() {
                 />
               </div>
               <div className="p-6">
-                <div className="flex items-center gap-2 text-muted-foreground mb-3">
+                <div className="flex items-center gap-2 text-black/40 mb-3">
                   <Calendar className="h-4 w-4" />
                   <span className="text-sm font-medium">{event.date}</span>
                 </div>
                 <h4 className="text-xl font-bold text-foreground mb-2">
                   {event.title}
                 </h4>
-                <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+                <p className="text-black/80 text-sm leading-relaxed mb-4">
                   {event.description}
                 </p>
                 <Button asChild variant="ghost" className="text-foreground hover:bg-foreground/10 p-0 h-auto font-medium">

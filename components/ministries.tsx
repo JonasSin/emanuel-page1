@@ -39,7 +39,7 @@ export default function Ministries() {
       }}
     >
       <div className="absolute inset-0 bg-background/80"></div>
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10"> 
         {/* Header */}
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between mb-16">
           <div>
@@ -54,11 +54,11 @@ export default function Ministries() {
           </div>
           <Button
             variant="outline"
-            className="mt-8 lg:mt-0 border-foreground/30 text-foreground hover:bg-foreground/10"
+            className="group mt-8 lg:mt-0 border-white/30 text-white hover:bg-white/10 cursor-pointer"
           >
-            Conecta con un Ministerio
-            <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
+          Conecta con un Ministerio
+          <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+        </Button>
         </div>
 
         {/* Ministry Cards */}
@@ -68,7 +68,7 @@ export default function Ministries() {
             return (
               <div
                 key={index}
-                className="group p-8 bg-white/80 rounded-lg border border-border hover:border-foreground/60 transition-all duration-300 cursor-pointer"
+                className="group p-8 bg-white/70 rounded-lg border border-border hover:border-foreground/100 transition-all duration-300 cursor-pointer"
               >
                 <div className="w-12 h-12 rounded-lg bg-background flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                   <Icon className="h-6 w-6 text-foreground" />

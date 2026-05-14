@@ -14,17 +14,20 @@ export default function Hero() {
   };
 
   return (
-    <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Video/Image */}
-      <div className="absolute inset-0">
-        <Image
-          src={emanuel}
-          alt="Emanuel Iglesia"
-          fill
-          className="object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background/50" />
-      </div>
+    <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden"
+    style={{
+    backgroundImage: 'url(/foto2.jpeg)', // Asegúrate de poner la ruta correcta
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundAttachment: 'fixed'
+  }}>
+      {/* Overlay para el gradiente */}
+  <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background/50" />
+
+  {/* Content */}
+  <div className="relative z-10 max-w-5xl px-3 text-center pt-20">
+    {/* Tu contenido aquí */}
+  </div>
 
       {/* Content */}
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center pt-20">

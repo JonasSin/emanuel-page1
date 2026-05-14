@@ -52,7 +52,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-20">
           <button
             onClick={() => scrollToSection('#inicio')}
-            className="flex items-center gap-3 text-xl font-bold tracking-tight text-foreground hover:opacity-80 transition-opacity"
+            className="flex items-center gap-3 text-xl font-bold tracking-tight text-foreground hover:opacity-80 transition-opacity cursor-pointer"
           >
             <Image
               src={iglesiaLogo}
@@ -67,9 +67,10 @@ export default function Navbar() {
           <div className="hidden lg:flex items-center gap-8">
             {navLinks.map((link) => (
               <button
+              
                 key={link.name}
                 onClick={() => scrollToSection(link.href)}
-                className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors tracking-wide uppercase"
+                className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors tracking-wide uppercase cursor-pointer"
               >
                 {link.name}
               </button>
@@ -80,7 +81,7 @@ export default function Navbar() {
             <Button
               onClick={() => scrollToSection('#servicios')}
               variant="outline"
-              className="border-foreground text-foreground hover:bg-foreground hover:text-background transition-all"
+              className="border-foreground text-foreground hover:bg-foreground hover:text-background transition-all cursor-pointer"
             >
               Visítanos
             </Button>
