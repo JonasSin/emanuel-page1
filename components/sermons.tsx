@@ -35,17 +35,17 @@ const sermons: Sermon[] = [
 
 export default function Sermons() {
   return (
-    <section className="py-16 bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800">
+    <section id="mensajes" className="py-16 bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-800 dark:text-slate-200 mb-4">
-            MENSAJES DEL PASTOR
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-muted-foreground mb-6">
+            Mensajes del Pastor
           </h2>
-          <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+          <p className="text-lg text-slate-500 dark:text-slate-300 max-w-3xl mx-auto">
             Tiempos de adoración, enseñanza y oración donde como iglesia nos reunimos para escuchar la Palabra de Dios, fortalecer nuestra fe y crecer en comunión.
           </p>
         </div>
-
+{/* */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {sermons.map((sermon) => (
             <SermonCard
@@ -58,7 +58,7 @@ export default function Sermons() {
           ))}
         </div>
 
-        <div className="text-center mt-12">
+        <div className="flex flex-col sm:flex-row justify-center gap-4 mt-12">
           <Button
             variant="outline"
             size="lg"
@@ -72,7 +72,24 @@ export default function Sermons() {
               className="flex items-center gap-2"
             >
               <ExternalLink className="w-5 h-5" />
-              Ver más videos en nuestro canal
+              Mensajes en YouTube
+            </a>
+          </Button>
+
+          <Button
+            variant="outline"
+            size="lg"
+            asChild
+            className="border-slate-300 hover:border-slate-400 dark:border-slate-600 dark:hover:border-slate-500"
+          >
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2"
+            >
+              <ExternalLink className="w-5 h-5" />
+              Pastor Geon Won Park
             </a>
           </Button>
         </div>

@@ -2,6 +2,7 @@
 
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Users, Music, BookOpen, Heart } from 'lucide-react';
+import ministerioImage from '../public/ministerio.png';
 
 const ministries = [
   {
@@ -32,7 +33,7 @@ export default function Ministries() {
       id="ministerios" 
       className="py-32 relative"
       style={{
-        backgroundImage: 'url(/ministerio.png)',
+        backgroundImage: `url(${ministerioImage.src})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed'

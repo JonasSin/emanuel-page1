@@ -4,6 +4,9 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Calendar } from 'lucide-react';
 import Image from 'next/image';
+import retiroImage from '../public/retiro/foto2.jpeg';
+import conferenciaImage from '../public/conferencia/foto2.jpeg';
+import matrimoniosImage from '../public/matrimonios/foto2.jpeg';
 
 const events = [
   {
@@ -11,15 +14,15 @@ const events = [
     slug: 'retiro',
     date: 'Abril 13 - 20, 2026',
     description: 'Únete a nosotros ',
-    image: '/retiro/foto2.jpeg',
+    image: retiroImage,
     featured: true,
   },
   {
     title: 'Conferencia de Jóvenes',
     slug: 'conferencia',
     date: 'Mayo 15 - 17, 2026',
-    description: 'Un encuentro poderoso para la nueva generación. Tres días de adoración, enseñanza y comunidad.',
-    image: '/conferencia/foto2.jpeg',
+    description: 'Un encuentro poderoso para la nueva generación. Tres días de adoración y comunidad.',
+    image: conferenciaImage,
     featured: false,
   },
   {
@@ -27,7 +30,7 @@ const events = [
     slug: 'matrimonios',
     date: 'Junio 5 - 7, 2026',
     description: 'Un fin de semana especial para fortalecer....',
-    image: '/matrimonios/foto2.jpeg',
+    image: matrimoniosImage,
     featured: false,
   },
   {
@@ -35,7 +38,7 @@ const events = [
     slug: 'matrimonios',
     date: 'Junio 5 - 7, 2026',
     description: 'Un fin de semana especial para fortalecer....',
-    image: '/matrimonios/foto2.jpeg',
+    image: matrimoniosImage,
     featured: false,
   },
   {
@@ -43,19 +46,18 @@ const events = [
     slug: 'matrimonios',
     date: 'Junio 5 - 7, 2026',
     description: 'Un fin de semana especial para fortalecer....',
-    image: '/matrimonios/foto2.jpeg',
+    image: matrimoniosImage,
     featured: false,
   },
 ];
 
 export default function Events() {
   return (
-    <section id="eventos" className="py-32 bg-secondary">
+    <section id="eventos" className="py-32 bg-[#FCA311]/100">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Featured Event */}
         <div className="mb-20">
-          
-          <div className="grid lg:grid-cols-2 gap-0 bg-white/40 rounded-lg overflow-hidden hover:border-foreground/50 transition-all duration-300 cursor-pointer border border-border">
+          <div className="grid lg:grid-cols-2 gap-0 bg-white/100 rounded-lg overflow-hidden hover:border-foreground/50 transition-all duration-300 cursor-pointer">
             <div className="relative aspect-[4/3] lg:aspect-auto">
               <Image
                 src={events[0].image}

@@ -1,6 +1,6 @@
 'use client';
 
-import { Clock, MapPin, Calendar } from 'lucide-react';
+import { Clock, MapPin, Calendar, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const serviceSchedule = [
@@ -26,7 +26,7 @@ const serviceSchedule = [
   },
   {
     day: 'Viernes',
-    times: ['6:00 PM'],
+    times: ['7:00 PM'],
     description: 'Culto Oración',
   },
   {
@@ -56,11 +56,11 @@ export default function Services() {
           {serviceSchedule.map((service, index) => (
             <div
               key={index}
-              className="group p-8 bg-background/80 cursor-pointer" >{/* rounded-lg border border-border hover:border-foreground/30 transition-all duration-300*/ }
+              className="group p-8 bg-[#FCA311]/600    " >{/* rounded-lg border border-border hover:border-foreground/30 transition-all duration-300*/ }
                
               <div className="flex items-center gap-3 mb-5">
-                <Calendar className="h-6 w-5 text-muted-foreground" />
-                <span className="text-sm font-medium uppercase tracking-wider text-muted-foreground">
+                <Calendar className="h-6 w-5 text-black/60" />
+                <span className="text-sm font-medium uppercase tracking-wider text-black/60">
                   {service.day}
                 </span>
               </div>
@@ -69,18 +69,18 @@ export default function Services() {
               </h3>
 
               <div className="flex flex-wrap gap-2">
-  {service.times.map((time, idx) => (
-    <span
-      key={idx}
-      /* Cambios: bg-white para fondo blanco sólido, text-black para texto negro */
-      className="flex items-center gap-2 px-4 py-2 bg-white rounded-full text-sm font-medium text-black border border-gray-100"
-    >
-      {/* Cambio: stroke-black o text-black para que el icono sea negro */}
-      <Clock className="h-4 w-4 text-black" />
-      {time}
-    </span>
-  ))}
-</div>
+                {service.times.map((time, idx) => ( //idx es el índice del tiempo dentro del arreglo de tiempos
+                <span
+                  key={idx}
+                  /* Cambios: bg-white para fondo blanco sólido, text-black para texto negro */
+                  className="flex items-center gap-2 px-4 py-2 bg-[#E5E5E5] rounded-full text-sm font-medium text-black border border-gray-100"
+                >
+                  {/* Cambio: stroke-black o text-black para que el icono sea negro */}
+                  <Clock className="h-4 w-4 text-black" />
+                  {time}
+                </span>
+              ))}
+            </div>
 
             </div>
           ))}
@@ -96,14 +96,15 @@ export default function Services() {
                   Ubicación
                 </span>
               </div>
-              <h3 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              <h3 className="text-3xl md:text-4xl font-bold text-[#FCA311] mb-3">
                 Panamá, Provincia de Panamá - Bethania, Club X.
               </h3>
-              <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-               Sostenemos y disfrutamos el pacto de Dios las 24 horas del día, caminando bajo su soberanía absoluta y confiando plenamente en Su gobierno perfecto.
+              <p className="text-lg text-[#FCA311]/80 mb-8 leading-relaxed">
+               Sostenemos y disfrutamos el pacto de Dios las 24 horas del día, caminando bajo su soberanía absoluta y confiando plenamente en su gobierno perfecto.
               </p>
-              <Button className="bg-foreground text-background hover:bg-foreground/90">
-                Obtener Direcciones
+              <Button className="bg-white/80 text-background/80 hover:bg-[#FCA311]/100 cursor-pointer">
+                Ubicación en Google Maps
+                <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </div>
             <div className="aspect-video bg-background rounded-lg overflow-hidden">

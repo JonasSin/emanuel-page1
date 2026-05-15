@@ -2,7 +2,6 @@
 
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
-import Image from 'next/image';
 import emanuel from '../public/foto2.jpeg';
 
 export default function Hero() {
@@ -16,7 +15,7 @@ export default function Hero() {
   return (
     <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden"
     style={{
-    backgroundImage: 'url(/foto2.jpeg)', // Asegúrate de poner la ruta correcta
+    backgroundImage: `url(${emanuel.src})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     backgroundAttachment: 'fixed'

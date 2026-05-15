@@ -19,7 +19,7 @@ export default function About() {
           </h3>
         </div>
 
-        {/* Two Column Section */}
+        {/* Secci[on] de 2 columnas */}
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-start">
           {/* Left Column - Text */}
           <div className="order-2 lg:order-3">
@@ -53,7 +53,7 @@ export default function About() {
 
           {/* Right Column - Image */}
           <div className="relative order-1 lg:order-2">
-            <div className="relative aspect-[4/5] overflow-hidden rounded-lg">
+            <div className="relative aspect-[6/7] overflow-hidden rounded-lg">
               <Image
                 src={foto}
                 alt="Comunidad de fe"

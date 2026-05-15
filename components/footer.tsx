@@ -2,6 +2,7 @@
 
 import { Facebook, Instagram, Youtube, Mail, Phone, MapPin } from 'lucide-react';
 import Image from 'next/image';
+import logo from '../public/logo.png';
 
 const footerLinks = {
   connect: [
@@ -43,7 +44,7 @@ export default function Footer() {
           <div className="col-span-2 md:col-span-4 lg:col-span-1">
             <div className="mb-4 bg-white px-2 py-2 rounded-xl inline-flex items-center justify-center border border-slate-200 shadow-sm">
               <Image
-                src="/logo.png"
+                src={logo}
                 alt="Iglesia Emanuel"
                 width={240}
                 height={96}

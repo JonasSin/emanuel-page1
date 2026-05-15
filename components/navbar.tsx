@@ -61,7 +61,7 @@ export default function Navbar() {
               height={40}
               className="h-10 w-10 object-contain"
             />
-            <span>IGLESIA EMANUEL</span>
+            <span>Iglesia Emanuel</span>
           </button>
 
           <div className="hidden lg:flex items-center gap-8">
@@ -79,11 +79,11 @@ export default function Navbar() {
 
           <div className="hidden lg:block">
             <Button
-              onClick={() => scrollToSection('#servicios')}
-              variant="outline"
-              className="border-foreground text-foreground hover:bg-foreground hover:text-background transition-all cursor-pointer"
+              onClick={() => scrollToSection('#mensajes')}
+              
+              className="text-white/100 bg-[#FCA311] hover:bg-foreground hover:text-background transition-all cursor-pointer"
             >
-              Visítanos
+              Mensajes
             </Button>
           </div>
 
@@ -113,11 +113,11 @@ export default function Navbar() {
             </button>
           ))}
           <Button
-            onClick={() => scrollToSection('#servicios')}
-            variant="outline"
-            className="w-full border-foreground text-foreground hover:bg-foreground hover:text-background mt-4"
+            onClick={() => scrollToSection('#mensajes')}
+            
+            className="w-full bg-[#FCA311] border-foreground text-foreground hover:bg-foreground hover:text-background mt-4"
           >
-            Visítanos
+            Mensajes
           </Button>
         </div>
       </div>
