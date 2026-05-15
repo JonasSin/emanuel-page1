@@ -38,14 +38,15 @@ const serviceSchedule = [
 
 export default function Services() {
   return (
-    <section id="servicios" className="py-32 bg-gradient-to-br from-amber-900 to-stone-100">
+    <section id="servicios" 
+  className="py-32 bg-[#E5E5E5]">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-20">
           <p className="text-sm font-medium tracking-[0.4em] uppercase text-black/60 mb-4">
             Horarios de Servicios
           </p>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black/60">
             Únete a Nosotros
           </h2>
         </div>
@@ -55,28 +56,32 @@ export default function Services() {
           {serviceSchedule.map((service, index) => (
             <div
               key={index}
-              className="group p-8 bg-background rounded-lg border border-border hover:border-foreground/30 transition-all duration-300"
-            >
-              <div className="flex items-center gap-3 mb-6">
-                <Calendar className="h-5 w-5 text-muted-foreground" />
+              className="group p-8 bg-background/80 cursor-pointer" >{/* rounded-lg border border-border hover:border-foreground/30 transition-all duration-300*/ }
+               
+              <div className="flex items-center gap-3 mb-5">
+                <Calendar className="h-6 w-5 text-muted-foreground" />
                 <span className="text-sm font-medium uppercase tracking-wider text-muted-foreground">
                   {service.day}
                 </span>
               </div>
-              <h3 className="text-2xl font-bold text-foreground mb-4">
+              <h3 className="text-2xl font-bold text-foreground/100 mb-8">
                 {service.description}
               </h3>
+
               <div className="flex flex-wrap gap-2">
-                {service.times.map((time, idx) => (
-                  <span
-                    key={idx}
-                    className="flex items-center gap-2 px-4 py-2 bg-background rounded-full text-sm font-medium text-foreground"
-                  >
-                    <Clock className="h-4 w-4" />
-                    {time}
-                  </span>
-                ))}
-              </div>
+  {service.times.map((time, idx) => (
+    <span
+      key={idx}
+      /* Cambios: bg-white para fondo blanco sólido, text-black para texto negro */
+      className="flex items-center gap-2 px-4 py-2 bg-white rounded-full text-sm font-medium text-black border border-gray-100"
+    >
+      {/* Cambio: stroke-black o text-black para que el icono sea negro */}
+      <Clock className="h-4 w-4 text-black" />
+      {time}
+    </span>
+  ))}
+</div>
+
             </div>
           ))}
         </div>

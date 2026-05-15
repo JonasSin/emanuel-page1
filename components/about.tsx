@@ -22,11 +22,11 @@ export default function About() {
         {/* Two Column Section */}
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-start">
           {/* Left Column - Text */}
-          <div className="order-2 lg:order-1">
+          <div className="order-2 lg:order-3">
             <h3 className="text-2xl md:text-3xl font-bold text-black mb-6">
               Somos una iglesia que viva y testifique el poder del Espíritu Santo,
             </h3>
-            <p className="text-lg text-teal-900 leading-relaxed ">
+            <p className="text-lg text-teal-900 leading-relaxed mb-2">
               así como ocurrió en el Aposento Alto de Marcos, extendiendo el evangelio hasta lo último de la tierra.   
             </p>
             <p className="text-lg text-teal-900 leading-relaxed mb-8">
@@ -61,7 +61,7 @@ export default function About() {
                 className="object-cover"
               />
             </div>
-            <div className="absolute -bottom-8 -left-8 w-48 h-48 bg-secondary rounded-lg hidden lg:block" />
+            <div className="absolute -bottom-16 -left-8 w-18 h-18 bg-secondary rounded-lg hidden lg:block border-2 border-white" />
           </div>
         </div>
       </div>

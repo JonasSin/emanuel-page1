@@ -1,7 +1,10 @@
 /** @type {import('next').NextConfig} */
+const isProduction = process.env.NODE_ENV === 'production';
+
 const nextConfig = {
   output: 'export', // <---
-  basePath: '/emanuel-page1', // Add this for GitHub Pages deployment
+  basePath: isProduction ? '/emanuel-page1' : '',
+  assetPrefix: isProduction ? '/emanuel-page1/' : '',
   typescript: {
     ignoreBuildErrors: true,
   },
