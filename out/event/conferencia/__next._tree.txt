@@ -1,5 +1,5 @@
-:HL["/_next/static/chunks/0vqqm61enyw7m.css","style"]
-:HL["/_next/static/chunks/15e9qsws-jk36.css","style"]
-:HL["/_next/static/media/797e433ab948586e-s.p.0.q-h669a_dqa.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-:HL["/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"event","param":null,"prefetchHints":0,"slots":{"children":{"name":"eventName","param":{"type":"d","key":"conferencia","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"M7fhQDHaPAQRBV7bXMiAY"}
+:HL["/emanuel-page1/_next/static/chunks/09hnppj3g-ub_.css","style"]
+:HL["/emanuel-page1/_next/static/chunks/09gzng7_cghx_.css","style"]
+:HL["/emanuel-page1/_next/static/media/797e433ab948586e-s.p.09zddjkbdep5a.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/emanuel-page1/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"event","param":null,"prefetchHints":0,"slots":{"children":{"name":"eventName","param":{"type":"d","key":"conferencia","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"GeE22plZWTOEH9_ER9xeE"}
